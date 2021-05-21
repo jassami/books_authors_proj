@@ -1,0 +1,2 @@
+# books_authors_proj
+A Django application taht creates books and authors and displays a table of all what's in the database. you can go to a specific book or author, have its info displayed, have a drop down of books/authors that are not associated with it, and have the option to add any of them to the list.
