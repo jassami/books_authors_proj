@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style1.css' %}">
     </head>
     <body>
         <div class="container">
@@ -12,11 +14,11 @@
                 <h1>Add a Book</h1>
                 <form action="/add_book" method="POST">
                     {% csrf_token %}
-                    <label for="title">Title</label>
-                    <input type="text" name="title"><br>
-                    <label for="description">Description</label>
-                    <input type="text" name="desc"><br>
-                    <input type="submit" value="Add">
+                    <label class="space" for="title">Title</label>
+                    <input id="title" type="text" name="title"><br>
+                    <label class="space" for="description">Description</label>
+                    <input class="space" type="text" name="desc"><br>
+                    <input class="space" id="button" type="submit" value="Add">
                 </form>
             </div>
             <div class="box">

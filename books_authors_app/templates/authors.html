@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'style1.css' %}">
     </head>
     <body>
         <div class="container">
@@ -12,13 +14,13 @@
                 <h1>Add an Author</h1>
                 <form action="/add_author" method="POST">
                     {% csrf_token %}
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name"><br>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name"><br>
-                    <label for="notes">Notes</label>
-                    <input type="text" name="notes"><br>
-                    <input type="submit" value="Add">
+                    <label class="space" for="first_name">First Name</label>
+                    <input id="title" type="text" name="first_name"><br>
+                    <label class="space" for="last_name">Last Name</label>
+                    <input class="space" type="text" name="last_name"><br>
+                    <label class="space" for="notes">Notes</label>
+                    <input class="space" type="text" name="notes"><br>
+                    <input class="space" id="button" type="submit" value="Add">
                 </form>
             </div>
             <div class="box">
